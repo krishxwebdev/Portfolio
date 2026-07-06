@@ -1,0 +1,142 @@
+/* ==============================
+   FOOTER
+============================== */
+
+.footer {
+  width: 100%;
+  background: #080b10;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 70px 8% 50px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* ==============================
+   LOGO
+============================== */
+
+.footer-logo h2 {
+  color: #E9C400;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer-logo p {
+  color: #bfbfbf;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 300px;
+}
+
+/* ==============================
+   NAV
+============================== */
+
+.footer-nav h4,
+.footer-socials-block h4 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-nav ul li a {
+  color: #bfbfbf;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-nav ul li a:hover {
+  color: #E9C400;
+  padding-left: 6px;
+}
+
+/* ==============================
+   SOCIALS
+============================== */
+
+.footer-socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-socials a {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bfbfbf;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  background: #E9C400;
+  border-color: #E9C400;
+  color: #111;
+  transform: translateY(-4px);
+}
+
+/* ==============================
+   BOTTOM BAR
+============================== */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 20px 8%;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-logo {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 50px 25px 40px;
+  }
+
+  .footer-bottom {
+    padding: 18px 25px;
+  }
+}
